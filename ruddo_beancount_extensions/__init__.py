@@ -1,4 +1,5 @@
-"""A plugin that suppresses future transactions when enabled.
+"""
+Various Beancount plugins.
 """
 
 __author__ = "Manuel Amador (Rudd-O)"

@@ -5,7 +5,7 @@ import os
 
 dir = os.path.dirname(__file__)
 path_to_main_file = os.path.join(
-    dir, "src/beancount_extensions/future_transactions/__init__.py"
+    dir, "ruddo_beancount_extensions/__init__.py"
 )
 path_to_readme = os.path.join(dir, "README.md")
 for line in open(path_to_main_file):
@@ -14,7 +14,7 @@ for line in open(path_to_main_file):
         break
 else:
     raise ValueError(
-        '"__version__" not found in "src/beancount_extensions/future_transactions/__init__.py"'
+        '"__version__" not found in "ruddo_beancount_extensions/__init__.py"'
     )
 readme = open(path_to_readme).read(-1)
 
@@ -28,25 +28,17 @@ classifiers = [
 ]
 
 setup(
-    name="beancount-future-transactions",
+    name="ruddo_beancount_extensions",
     version=version,
-    description="A plugin for Beancount that suppresses future transactions",
+    description="A few plugins for Beancount",
     long_description=readme,
     long_description_content_type='text/markdown',
     author="Manuel Amador (Rudd-O)",
     author_email="rudd-o@rudd-o.com",
     license="GPL",
-    url="http://github.com/Rudd-O/beancount-future-transactions",
-    package_dir=dict(
-        [
-            (
-                "beancount_extensions.future_transactions",
-                "src/beancount_extensions/future_transactions",
-            ),
-        ]
-    ),
+    url="http://github.com/Rudd-O/beancount-extensions",
     classifiers=classifiers,
-    packages=["beancount_extensions.future_transactions"],
+    packages=["ruddo_beancount_extensions"],
     requires=["beancount"],
     zip_safe=False,
     options={"bdist_rpm": {"requires": "python3-beancount", "no_autoreq": True}},
