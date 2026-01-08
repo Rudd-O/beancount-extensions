@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-from setuptools import setup
+from setuptools import setup, find_packages
 import os
 
 dir = os.path.dirname(__file__)
@@ -38,7 +38,7 @@ setup(
     license="GPL",
     url="http://github.com/Rudd-O/beancount-extensions",
     classifiers=classifiers,
-    packages=["ruddo_beancount_extensions"],
+    packages=find_packages(where=".", include=["ruddo_beancount_extensions"]),
     requires=["beancount"],
     zip_safe=False,
     options={"bdist_rpm": {"requires": "python3-beancount", "no_autoreq": True}},
