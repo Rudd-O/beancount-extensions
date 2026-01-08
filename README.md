@@ -1,5 +1,10 @@
 # Beancount future transactions
 
+**Attention:** The project beancount-future-transactions has been superseded by
+[beancount-extensions](https://github.com/Rudd-O/beancount-extensions).  This
+is the last release of the project as is -- upgrade your Beancount setup to
+use the new project.
+
 This is a very simple plugin for Beancount that filters out transactions with a future date, provided they are tagged with the `#future` tag.
 
 To use:

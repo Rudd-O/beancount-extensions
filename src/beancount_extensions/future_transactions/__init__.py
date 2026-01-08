@@ -3,7 +3,7 @@
 
 __author__ = "Manuel Amador (Rudd-O)"
 __plugins__ = ("future_transactions_plugin",)
-__version__ = "0.0.5"
+__version__ = "0.0.7"
 
 import datetime
 from beancount.core import data
