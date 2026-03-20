@@ -48,7 +48,7 @@ Now mark the account you want subaccounts to be automatically opened for, as fol
 ; beancount.bean
 
 2025-01-01 open Expenses:Gifts
-  auto_open_subacconuts: "true"
+  auto_open_subaccounts: "true"
 ```
 
 Presto!  Now you can expect all transactions mentioning any subaccount under `Expenses:Gifts` to auto-create open account directives for you.
